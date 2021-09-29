@@ -35,19 +35,26 @@ $loginbutton: rgba(6, 148, 42, 0.2);
   height: 40em;
   padding-left: 5em;
 }
-.top-body h1 {
+.top-body h1,
+.slow1 h1,
+.wraptop h1,
+.toto h1 {
   position: relative;
   font-family: $fontfamily;
   font-size: 48px;
   font-weight: bolder;
   color: $hcolor;
 }
-.top-body p {
+.top-body p,
+.slow1 p,
+.datum p,
+.toto p {
   position: relative;
   font-family: $fontfamily;
   font-size: 16px;
   font-weight: 400;
   color: $pcolor;
+  line-height: 200%;
 }
 .top-body h1 span {
   color: $spancolor;
@@ -160,4 +167,279 @@ div.raba {
   cursor: pointer;
   border: 1px solid $spancolor;
   border-radius: 0px 50px 50px 0px;
+}
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.main-body h1 {
+  position: relative;
+  font-family: $fontfamily;
+  font-size: 48px;
+  font-weight: bolder;
+  color: $hcolor;
+}
+.main-body h3 {
+  position: relative;
+  font-family: $fontfamily;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: $pcolor;
+}
+.main-body p {
+  position: relative;
+  width: 480px;
+  font-family: $fontfamily;
+  font-size: 16px;
+  font-style: normal;
+  width: 94%;
+  font-weight: normal;
+  line-height: 200%;
+  color: $pcolor;
+}
+.imgs {
+  position: relative;
+  width: 310px;
+  background: #ffffff;
+
+  filter: drop-shadow(0px 10px 30px rgba(6, 148, 42, 0.05));
+
+  border-radius: 20px 20px 20px 20px;
+}
+.imgs img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.imgs h4 {
+  position: relative;
+  font-family: $fontfamily;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: $pcolor;
+  text-align: center;
+}
+.imgs h4 span {
+  color: $spancolor;
+}
+.heighter {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.lone {
+  position: relative;
+  top: 15em;
+}
+.heighter div {
+  margin-bottom: 4em;
+}
+.wrapchild2 h1 {
+  position: relative;
+  font-family: $fontfamily;
+  font-size: 36px;
+  font-weight: 700;
+  color: $pcolor;
+}
+.broxer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.boxer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3em;
+  width: 286px;
+  margin-bottom: 1em;
+  height: 275px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.boxer h3,
+.datum h3 {
+  position: relative;
+  font-family: $fontfamily;
+  font-size: 21px;
+  text-align: center;
+  font-weight: 500;
+  color: $pcolor;
+}
+.boxer .img {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  border-radius: 50%;
+  background: rgba(6, 148, 42, 0.1);
+}
+.boxer .img img {
+  position: relative;
+
+  height: 30px;
+  object-fit: contain;
+}
+.boxer p {
+  position: relative;
+  font-family: $fontfamily;
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #9b9b9b;
+}
+.wrapchild3 {
+  position: relative;
+  margin-top: 10em;
+  width: 98%;
+  height: 500px;
+  padding: 2em;
+  background: rgba(6, 148, 42, 0.05);
+}
+.slow1 {
+  position: relative;
+  align-items: center;
+  align-self: center;
+  padding: 2em;
+}
+.slow1 h1 {
+  font-size: 36px !important;
+  font-weight: 900 !important;
+  line-height: 150%;
+  font-style: $fontfamily;
+  /* or 54px */
+  color: #3f403f;
+}
+.slow1 a {
+  text-decoration: none;
+  position: relative;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 23px;
+  font-family: $fontfamily;
+  /* identical to box height */
+  color: $spancolor;
+  box-shadow: 0 4px 8px 0 rgba(6, 148, 42, 0.14);
+}
+.rolls {
+  position: relative;
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.roller {
+  position: relative;
+  width: 136px;
+  height: 136px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-left: 0.3em !important;
+  margin-bottom: 1em;
+  box-shadow: 10px 10px 30px rgba(118, 196, 138, 0.04);
+}
+.shifter {
+  position: relative;
+  margin-bottom: -4em !important;
+}
+.roller img {
+  object-fit: contain;
+}
+.wrapchild4 {
+  position: relative;
+  margin-top: 7em;
+}
+.wraptop h1 {
+  width: 40%;
+  font-size: 36px !important;
+  font-weight: 900 !important;
+  line-height: 150%;
+  font-style: $fontfamily !important;
+  /* or 54px */
+  color: #3f403f;
+}
+.datum {
+  position: relative;
+  display: flex;
+  top: 4em;
+  flex-direction: column;
+  align-self: center;
+  align-content: center;
+}
+.datum h3 {
+  position: relative;
+  text-align: left !important;
+  font-weight: 900;
+  margin: 0 !important;
+}
+.datum img {
+  position: absolute;
+  top: -3em;
+}
+.oily .hid {
+  position: absolute;
+  z-index: -1;
+  left: 2em;
+  bottom: -0.5em;
+}
+.arrows {
+  position: relative;
+  display: flex;
+  justify-content: right;
+}
+.arrows button {
+  position: relative;
+  border: none;
+  background: none;
+}
+.arrows img.change {
+  transform: rotate(180deg);
+}
+.wrapchild5 {
+  position: relative;
+  margin-top: 10em;
+  width: 100%;
+  height: 367px;
+  background-image: url("../images/MaskGroup.png");
+  border-radius: 30px;
+}
+.toto {
+  position: relative;
+  top: 4em;
+}
+.toto h1,
+.toto p {
+  color: #fff !important;
+}
+.toto button {
+  color: #fff;
+  background: $spancolor;
+  border-radius: 50px;
+  height: 40px;
+  width: 229px;
+  box-shadow: 0px 10px 30px rgba(6, 148, 42, 0.12);
+  border: 1px solid $spancolor;
 }
