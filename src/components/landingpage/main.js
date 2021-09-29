@@ -34,7 +34,7 @@ class Main extends Component {
     };
   }
   async next(value) {
-    if (value == "next") {
+    if (value === "next") {
       if (this.state.active === 2) {
         this.state.active -= 1;
         this.setState({ active: this.state.active });
@@ -303,7 +303,7 @@ class Main extends Component {
                 </Cell>
                 <Cell col={8}>
                   {this.state.active === 1 && (
-                    <div className="datum" style={{ width: "85%" }}>
+                    <div className="datum">
                       <img src={quote} alt="quote" />
                       <p>
                         The platform is really convenient to reach out to
