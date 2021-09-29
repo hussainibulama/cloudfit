@@ -612,7 +612,30 @@ li.burger {
   position: relative;
   margin-top: 10em;
 }
+.ark {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: right;
+  align-content: right;
+  align-self: right;
+  text-align: right;
+}
+.mobile {
+  display: none;
+  visibility: hidden;
+}
 @media (max-width: 768px) {
+  .mobile {
+    position: relative;
+    display: block;
+    visibility: visible;
+  }
+  .web {
+    display: none;
+    visibility: hidden;
+  }
   .wrapchild0 {
     position: relative;
     margin-top: 1em;

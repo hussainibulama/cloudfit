@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
+import Slider from "./slider";
 import check from "../images/check.png";
 import quote from "../images/quote.png";
 import person from "../images/person.png";
 import persons from "../images/persons.png";
 import PArrow from "../images/PArrow.png";
 import NArrow from "../images/NArrow.png";
-import location from "../images/location.png";
 import a1 from "../images/a1.png";
 import a2 from "../images/a2.png";
 import a3 from "../images/a3.png";
@@ -26,8 +26,6 @@ import c5 from "../images/c5.png";
 import c6 from "../images/c6.png";
 import c7 from "../images/c7.png";
 import c8 from "../images/c8.png";
-import q1 from "../images/q1.png";
-import q4 from "../images/q4.png";
 
 class Main extends Component {
   constructor(props) {
@@ -60,180 +58,7 @@ class Main extends Component {
     return (
       <>
         <div className="wrapper">
-          <div className="wrapchild0">
-            <div className="alone">
-              <h1>Recommended Jobs</h1>
-            </div>
-            <div className="scroller">
-              <div className="single-scroll">
-                <div className="lefty">
-                  <div className="stamp">
-                    <p>Full time</p>
-                  </div>
-                </div>
-
-                <div className="centroid">
-                  {" "}
-                  <img src={q1} alt="img" />
-                  <p>QA Engineer</p>
-                </div>
-                <hr />
-                <div className="footroid">
-                  <p>Paystack </p>
-                  <div className="slitch">
-                    <div>
-                      <p>
-                        <img src={location} alt="location" />
-                        &nbsp;Lagos, Nigeria
-                      </p>
-                    </div>
-                    <div>
-                      <a href="http:/a.com">Apply now</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="single-scroll">
-                <div className="lefty">
-                  <div className="stamp">
-                    <p>Part time</p>
-                  </div>
-                </div>
-
-                <div className="centroid">
-                  {" "}
-                  <img src={c4} alt="img" />
-                  <p>QA Engineer</p>
-                </div>
-                <hr />
-                <div className="footroid">
-                  <p>Google </p>
-                  <div className="slitch">
-                    <div>
-                      <p>
-                        <img src={location} alt="location" />
-                        &nbsp;Lagos, Nigeria
-                      </p>
-                    </div>
-                    <div className="wrapa">
-                      <a href="http:/a.com">Apply now</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="single-scroll">
-                <div className="lefty">
-                  <div className="stamp">
-                    <p>Full time</p>
-                  </div>
-                </div>
-
-                <div className="centroid">
-                  {" "}
-                  <img src={c7} alt="img" />
-                  <p>HR Manager</p>
-                </div>
-                <hr />
-                <div className="footroid">
-                  <p>Flutterwave </p>
-                  <div className="slitch">
-                    <div>
-                      <p>
-                        <img src={location} alt="location" />
-                        &nbsp;Lagos, Nigeria
-                      </p>
-                    </div>
-                    <div>
-                      <a href="http:/a.com">Apply now</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="single-scroll">
-                <div className="lefty">
-                  <div className="stamp">
-                    <p>Full time</p>
-                  </div>
-                </div>
-
-                <div className="centroid">
-                  {" "}
-                  <img src={q4} alt="img" />
-                  <p>QA Engineer</p>
-                </div>
-                <hr />
-                <div className="footroid">
-                  <p>Access Bank </p>
-                  <div className="slitch">
-                    <div>
-                      <p>
-                        <img src={location} alt="location" />
-                        &nbsp;Lagos, Nigeria
-                      </p>
-                    </div>
-                    <div>
-                      <a href="http:/a.com">Apply now</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="single-scroll">
-                <div className="lefty">
-                  <div className="stamp">
-                    <p>Full time</p>
-                  </div>
-                </div>
-
-                <div className="centroid">
-                  {" "}
-                  <img src={q1} alt="img" />
-                  <p>QA Engineer</p>
-                </div>
-                <hr />
-                <div className="footroid">
-                  <p>Paystack </p>
-                  <div className="slitch">
-                    <div>
-                      <p>
-                        <img src={location} alt="location" />
-                        &nbsp;Lagos, Nigeria
-                      </p>
-                    </div>
-                    <div>
-                      <a href="http:/a.com">Apply now</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="arrows">
-                {this.state.active === 1 && (
-                  <button onClick={() => this.next("prev")}>
-                    <img className="change" src={NArrow} alt="quote" />
-                  </button>
-                )}
-                {this.state.active === 2 && (
-                  <button onClick={() => this.next("prev")}>
-                    <img src={PArrow} alt="quote" />
-                  </button>
-                )}
-                {this.state.active === 2 && (
-                  <button onClick={() => this.next("next")}>
-                    <img src={NArrow} alt="quote" />
-                  </button>
-                )}
-                {this.state.active === 1 && (
-                  <button onClick={() => this.next("next")}>
-                    <img className="change" src={PArrow} alt="quote" />
-                  </button>
-                )}
-              </div>
-            </div>
-          </div>
+          <Slider />
           <div className="wrapchild1">
             <Grid>
               <Cell col={7}>
@@ -398,7 +223,7 @@ class Main extends Component {
                     the go. We’ll deliver new, relevant jobs of interest
                     straight to your inbox.
                   </p>
-                  <a href="http://logo.com">
+                  <a href="/">
                     Learn More{" "}
                     <svg
                       width="16"
