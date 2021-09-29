@@ -9,8 +9,16 @@ import paystack from "../images/paystack-removebg-preview.png";
 import location from "../images/location.png";
 import search from "../images/search.png";
 import { Grid, Cell } from "react-mdl";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 class Top extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      burger: false,
+    };
+  }
+
   render() {
     return (
       <>
@@ -36,12 +44,39 @@ class Top extends Component {
             </div>
             <div className="dashbaord">
               <ul>
-                <li>Sign Up</li>
+                <li className="menu">Sign Up</li>
                 <li className="differ"> Log In</li>
+                <li className="burger">
+                  {" "}
+                  <div>
+                    <FontAwesomeIcon
+                      onClick={() =>
+                        this.setState({ burger: !this.state.burger })
+                      }
+                      icon={faBars}
+                    />
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
         </div>
+        {this.state.burger === true && (
+          <div className="burger-menu">
+            <div className="menu">
+              <ul>
+                <li>Companies</li>
+                <li>Candidates</li>
+                <li>Assessment</li>
+                <li>Post a Job</li>
+                <li>Career</li>
+                <li> Advice</li>
+                <li>Sign Up</li>
+              </ul>
+            </div>
+          </div>
+        )}
+
         <div className="subtopper">
           <Grid className="demo-grid-1">
             <Cell col={6}>
