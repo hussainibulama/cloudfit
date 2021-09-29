@@ -38,7 +38,8 @@ $loginbutton: rgba(6, 148, 42, 0.2);
 .top-body h1,
 .slow1 h1,
 .wraptop h1,
-.toto h1 {
+.toto h1,
+.alone h1 {
   position: relative;
   font-family: $fontfamily;
   font-size: 48px;
@@ -496,7 +497,138 @@ li.burger {
   display: none;
   visibility: hidden;
 }
+.scroller {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.wrapa {
+  position: relative;
+  display: flex;
+  width: 95px;
+  height: 25px;
+  background: rgba(6, 148, 42, 0.2);
+  border-radius: 50px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 12px;
+
+  line-height: 17px;
+  font-family: $fontfamily;
+  /* identical to box height */
+  color: #9b9b9b;
+}
+.single-scroll {
+  position: relative;
+  width: 280px;
+  height: 344px;
+  margin-bottom: 1em;
+  background: #ffffff;
+  box-shadow: 0px 10px 30px rgba(6, 148, 42, 0.05);
+  border-radius: 5px;
+  font-family: $fontfamily;
+}
+.single-scroll .stamp {
+  position: relative;
+  display: flex;
+  width: 95px;
+  height: 25px;
+  background: #f4f5f9;
+  border-radius: 50px;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  line-height: 17px;
+  font-family: $fontfamily;
+  /* identical to box height */
+  color: #9b9b9b;
+}
+.lefty {
+  position: relative;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  justify-content: right;
+  margin-top: 1em;
+  padding: 1em;
+}
+.centroid {
+  position: relative;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2em;
+}
+.centroid p,
+.footroid p {
+  font-family: $fontfamily;
+  font-size: 17px;
+  line-height: 150%;
+  width: 100%;
+  height: 27px;
+  font-weight: 900;
+  color: $pcolor;
+}
+.centroid img {
+  width: 166px;
+  height: 31px;
+  position: relative;
+  padding-bottom: 2em;
+  object-fit: contain;
+}
+.footroid {
+  position: relative;
+  padding: 1.5em;
+}
+.slitch {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.slitch p {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 100;
+  /* identical to box height, or 24px */
+
+  color: #3f403f;
+}
+.slitch a {
+  position: relative;
+  text-decoration: none;
+  color: $spancolor;
+}
+.alone h1 {
+  font-size: 36px !important;
+}
+.wrapchild0 {
+  position: relative;
+  margin-top: 10em;
+}
 @media (max-width: 768px) {
+  .wrapchild0 {
+    position: relative;
+    margin-top: 1em;
+    padding: 2em;
+  }
+
+  .single-scroll {
+    position: relative;
+    width: 100%;
+    height: 344px;
+    margin-bottom: 1em;
+    background: #ffffff;
+    box-shadow: 0px 10px 30px rgba(6, 148, 42, 0.05);
+    border-radius: 5px;
+    font-family: $fontfamily;
+  }
   li.burger {
     position: relative;
     display: block;
@@ -641,7 +773,8 @@ li.burger {
   .slow1 h1,
   .wraptop h1,
   .toto h1,
-  .wrapchild2 h1 {
+  .wrapchild2 h1,
+  .alone h1 {
     width: 100% !important;
     font-size: 20px !important;
   }
